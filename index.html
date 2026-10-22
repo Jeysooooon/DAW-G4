@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CitaYa | Propuesta de producto digital - Grupo 4</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#demo">Saltar a la demostración</a>
+
+<header>
+  <p class="tag">UJCV · Desarrollo de Aplicaciones Web · Grupo 4</p>
+  <h1>CitaYa</h1>
+  <p class="lead">Sistema de citas médicas que combina <strong>Automatización</strong> e <strong>Inteligencia Artificial</strong> para reservar más rápido y reducir las citas perdidas.</p>
+</header>
+
+<main>
+  <section aria-labelledby="problema">
+    <h2 id="problema">El problema</h2>
+    <p>Pedir una cita médica suele implicar llamadas, filas y esperas. Muchos pacientes no saben a qué especialista acudir y otros olvidan su cita, lo que deja horarios vacíos en la clínica.</p>
+  </section>
+
+  <section aria-labelledby="solucion">
+    <h2 id="solucion">La solución</h2>
+    <p>El paciente describe su motivo de consulta. CitaYa sugiere la especialidad más adecuada (IA), muestra horarios disponibles y, al confirmar, programa recordatorios automáticos (automatización).</p>
+  </section>
+
+  <section aria-labelledby="funciones">
+    <h2 id="funciones">Funciones principales</h2>
+    <ul class="cards">
+      <li><h3>Orientación con IA</h3><p>Sugiere la especialidad según el motivo de consulta.</p></li>
+      <li><h3>Reserva automática</h3><p>Muestra horarios libres y confirma la cita sin llamadas.</p></li>
+      <li><h3>Recordatorios</h3><p>Avisa 24 horas y 2 horas antes de la cita.</p></li>
+      <li><h3>Accesible y adaptable</h3><p>Funciona en celular o computadora y con lector de pantalla.</p></li>
+    </ul>
+  </section>
+
+  <section id="demo" aria-labelledby="titulo-demo">
+    <h2 id="titulo-demo">Demostración interactiva</h2>
+    <p class="nota">Simulación con respuestas predefinidas: no usa ninguna API real, no guarda datos y no sustituye una consulta médica. Usa datos ficticios.</p>
+
+    <div class="demo">
+      <div class="campo">
+        <label for="nombre">Nombre del paciente (ficticio)</label>
+        <input id="nombre" type="text" placeholder="Ej.: Paciente de prueba" maxlength="40">
+      </div>
+      <div class="campo">
+        <label for="motivo">Motivo de consulta</label>
+        <input id="motivo" type="text" placeholder="Ej.: dolor de muelas, dolor de cabeza, tos..." maxlength="80">
+      </div>
+      <div class="campo">
+        <label for="fecha">Día preferido</label>
+        <input id="fecha" type="date">
+      </div>
+      <button id="buscar" type="button">Buscar especialidad y horarios</button>
+    </div>
+
+    <div id="resultado" aria-live="polite"></div>
+  </section>
+
+  <section aria-labelledby="tecnologias">
+    <h2 id="tecnologias">Cómo se construye</h2>
+    <ul>
+      <li><strong>HTML:</strong> estructura semántica de la página y el formulario.</li>
+      <li><strong>CSS:</strong> diseño adaptable (responsive) y buen contraste.</li>
+      <li><strong>JavaScript:</strong> lógica del navegador. En una versión real llamaría por API a un servidor que se conecta a un servicio de IA, a la agenda de la clínica y al envío de mensajes, sin exponer claves en la página.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="riesgos">
+    <h2 id="riesgos">Riesgos a considerar</h2>
+    <ul>
+      <li><strong>Privacidad:</strong> los datos de salud son sensibles y requieren cifrado y consentimiento.</li>
+      <li><strong>Errores de la IA:</strong> solo orienta; un profesional debe confirmar la atención.</li>
+      <li><strong>Emergencias:</strong> el sistema debe indicar que, ante una urgencia, se acuda directamente al servicio de emergencias.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Integrantes: ______________________ · ______________________ · ______________________</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
