@@ -1,8 +1,6 @@
 # Grupo 4 · Desarrollo web que conecta las tecnologías emergentes
 **Asignatura:** Desarrollo de Aplicaciones Web (UJCV) · **Producto:** CitaYa, sistema de citas médicas automatizado
 
-Integrantes: ______________________ · ______________________ · ______________________
-
 ## 1. Función de HTML, CSS y JavaScript
 - **HTML:** estructura y significado del contenido (títulos, secciones, formularios).
 - **CSS:** aspecto y diseño adaptable a celular y computadora.
